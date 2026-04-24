@@ -41,7 +41,7 @@ Apasionado por el desarrollo web y la creación de experiencias modernas.
 ## 📸 Vista previa
 
 <p align="center">
-  <img src="img/image copy.jpg" width="500px">
+  <img src="PORTAFOLIO STEVEL/img/image copy.jpg" width="500px">
 </p>
 
 ---
