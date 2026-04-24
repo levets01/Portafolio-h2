@@ -8,6 +8,14 @@
     --border-color: #2d2d2d;
     --transition: all .3s ease;
 }
+body.claro {
+    --dark-bg: #f5f5f5;
+    --darker-bg: #ffffff;
+    --light-text: #111;
+    --gray-text: #241a1a;
+    --card-bg: #ffffff;
+    --border-color: #ddd;
+}
 
 * {
     padding: 0;
@@ -60,12 +68,14 @@ header {
     padding: 1rem 5%;
     max-width: 1400px;
     margin: 0 auto;
+    color: white;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1px;
+    
 }
 
 .logo span {
@@ -263,13 +273,15 @@ section {
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
+    
 }
 
 .skills li {
-    background: #2a2a2a;
+    background:var(--dark-bg) ;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.8rem;
+    
 }
 
 */aparatado de mascotas*/ .card {
@@ -337,7 +349,11 @@ section {
 .formulario .btn {
     width: fit-content;
     align-self: center;
+    background-color: #5651d8;
+    
 }
+
+
 
 .projects-container {
     display: flex;
@@ -381,10 +397,11 @@ section {
     display: flex;
     gap: 10px;
     margin-bottom: 15px;
+    
 }
 
 .project-tech span {
-    background: #2a2a2a;
+    background:var(--border-color);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -405,7 +422,39 @@ section {
     text-decoration: underline;
 }
 
+body.claro {
+    background-color: white;
+    color: rgb(15, 5, 5);
+}
 
+/* Botón modo claro/oscuro */
+button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Cuando está activo el modo claro */
+body.claro button {
+    background-color: #f1f1f1;
+    color: #111;
+}
+
+body.claro button:hover {
+    background-color: #ddd;
+}
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
